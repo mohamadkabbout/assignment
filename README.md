@@ -237,6 +237,14 @@ git push
 
 ## Repository Link
 
+---
+
+## Conversation Link
+
+This ChatGPT conversation was used as guidance while creating the project.
+
+[Open ChatGPT Conversation] https://chatgpt.com/share/69eb7997-bd50-83eb-88f5-f4c779de262c
+
 ```text
-https://github.com/mohamadkabbout/assignment
+https://github.com/mohamadkabbout/assignment.git
 ```
