@@ -7,7 +7,7 @@ function Slide() {
       <Container>
         <Box className="slide-content">
           <Typography variant="h2" className="slide-title">
-            Welcome to My React Project
+             My Dr.Ahmad trad
           </Typography>
 
           <Typography variant="h6" className="slide-text">
