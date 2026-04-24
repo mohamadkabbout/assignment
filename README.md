@@ -1,73 +1,242 @@
-# React + TypeScript + Vite
+# React TypeScript Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React TypeScript application created with Vite.  
+It includes a Bootstrap navbar and a Material UI slide section.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Features
 
-## React Compiler
+- React with TypeScript
+- Bootstrap navbar
+- Material UI slide section
+- SCSS styling
+- GitHub version control
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Steps to Create the Project
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+First, create a new React TypeScript project using Vite:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm create vite@latest assignment
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Choose:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```text
+React
+TypeScript
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Then enter the project folder:
+
+```bash
+cd assignment
+```
+
+Install the project dependencies:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm run dev
+```
+
+---
+
+## Install Bootstrap
+
+Bootstrap was used to create the navbar.
+
+```bash
+npm install bootstrap
+```
+
+Then Bootstrap was imported in `src/main.tsx`:
+
+```tsx
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+```
+
+---
+
+## Install Material UI
+
+Material UI was used to create the slide UI section.
+
+```bash
+npm install @mui/material @emotion/react @emotion/styled
+```
+
+---
+
+## Install Sass
+
+Sass was installed to use `.scss` files.
+
+```bash
+npm install sass
+```
+
+---
+
+## Project Structure
+
+```text
+src/
+  components/
+    navbar/
+      navbar.tsx
+      navbar.scss
+    slideUI/
+      slide.tsx
+      slide.scss
+  App.tsx
+  main.tsx
+```
+
+---
+
+## Navbar Component
+
+The navbar was created inside:
+
+```text
+src/components/navbar/
+```
+
+Files:
+
+```text
+navbar.tsx
+navbar.scss
+```
+
+The navbar uses Bootstrap classes for layout and styling.
+
+---
+
+## Slide UI Component
+
+The slide section was created inside:
+
+```text
+src/components/slideUI/
+```
+
+Files:
+
+```text
+slide.tsx
+slide.scss
+```
+
+The slide section uses Material UI components such as:
+
+```text
+Box
+Container
+Typography
+Button
+```
+
+---
+
+## Use Components in App.tsx
+
+Both components were imported and used in `src/App.tsx`:
+
+```tsx
+import Navbar from './components/navbar/navbar'
+import Slide from './components/slideUI/slide'
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Slide />
+    </>
+  )
+}
+
+export default App
+```
+
+---
+
+## Push Project to GitHub
+
+Initialize Git:
+
+```bash
+git init
+```
+
+Add all files:
+
+```bash
+git add .
+```
+
+Commit the project:
+
+```bash
+git commit -m "Initial commit"
+```
+
+Connect the project to GitHub:
+
+```bash
+git remote add origin https://github.com/mohamadkabbout/assignment.git
+```
+
+Rename the branch to main:
+
+```bash
+git branch -M main
+```
+
+Push the project:
+
+```bash
+git push -u origin main
+```
+
+---
+
+## Save New Changes to GitHub
+
+After editing files, use:
+
+```bash
+git add .
+git commit -m "Add Bootstrap navbar and MUI slide"
+git push
+```
+
+---
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+- Bootstrap
+- Material UI
+- Sass
+- GitHub
+
+---
+
+## Repository Link
+
+```text
+https://github.com/mohamadkabbout/assignment
 ```
