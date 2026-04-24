@@ -2,10 +2,10 @@ import './navbar.scss'
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg custom-navbar">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
       <div className="container">
         <a className="navbar-brand fw-bold" href="#">
-          My React App
+          Assignment
         </a>
 
         <button
@@ -21,7 +21,7 @@ function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse" id="mainNavbar">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link active" href="#">
                 Home
