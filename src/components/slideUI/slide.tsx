@@ -7,7 +7,7 @@ function Slide() {
       <Container>
         <Box className="slide-content">
           <Typography variant="h2" className="slide-title">
-             My Dr.Ahmad trad
+            Welcome to My React Project
           </Typography>
 
           <Typography variant="h6" className="slide-text">
@@ -22,5 +22,9 @@ function Slide() {
     </Box>
   )
 }
+
+
+
+
 
 export default Slide
