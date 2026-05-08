@@ -426,3 +426,5 @@ A global theme is used to keep the design consistent across Tailwind, MUI, Toast
 ## Final Summary
 
 This project demonstrates a complete React application structure. It includes authentication layout, main layout, routing, route protection, reusable components, global theme, toast notifications, UI components, and data grid. The project is organized in a clean way so each feature has its own folder and responsibility.
+
+chatgpt: https://chatgpt.com/share/69fdab2b-dd38-83eb-ae9e-8ec71d2b7b8b
